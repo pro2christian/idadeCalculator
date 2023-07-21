@@ -9,7 +9,7 @@ public class Pessoa
 		get { return this.anoNascimento; }
 		set { this.anoNascimento= value; }
 	}
-	private string nome;
+	private string nome ="";
 
 	public string Nome
 	{
@@ -17,5 +17,19 @@ public class Pessoa
 		set { this.nome = value; }
 	}
 
+	private int calculaIdade()
+	{	
+		//calcula a idade
+		DateTime data =	DateTime.Now;
+		int ano = data.Year;
+		int idade = ano - this.anoNascimento;
+		return idade;
+	}
+	public void exibirDados()
+	{
+		Console.WriteLine("Nome: "+this.Nome.ToUpper());
+		Console.WriteLine("Ano de Nascimento: "+this.anoNascimento);
+		Console.WriteLine("idade: " + calculaIdade());
+	}
 
 }
