@@ -5,6 +5,11 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "idadeCalculator", "idadeCalculator.csproj", "{57B85187-E148-4ABC-BEED-DCEFBE4919FD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{B0BCBEEA-2D1B-409B-900A-F85EC3831799}"
+	ProjectSection(SolutionItems) = preProject
+		Pessoa.cs = Pessoa.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
